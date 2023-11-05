@@ -13,7 +13,6 @@ definePageMeta({
   layout: "products",
 });
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
-console.log(products._rawValue);
 </script>
 
 <style scoped></style>
