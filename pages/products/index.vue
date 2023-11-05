@@ -13,6 +13,17 @@ definePageMeta({
   layout: "products",
 });
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
+
+// one way to override metadata
+useHead({
+  title: "Products",
+  meta: [
+    {
+      name: "description",
+      content: "This is the products page",
+    },
+  ],
+});
 </script>
 
 <style scoped></style>
