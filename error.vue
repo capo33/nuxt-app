@@ -15,5 +15,5 @@
 <script setup>
 defineProps(["error"]);
 
-const handleClearError = () => clearError({ redirect: "/" });
+const handleClearError = () => clearError({ redirect: "/" , });
 </script>
