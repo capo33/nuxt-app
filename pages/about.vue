@@ -1,15 +1,12 @@
 <template>
   <div>
     <h2>About</h2>
-    <p>{{ data }}</p>
+    <p v-for="d in data">{{ d.code }}</p>
   </div>
 </template>
 
 <script setup>
-const { data } = await useFetch("/api/test?name=capo", {
-  method: "post",
-  body: { age: 25 },
-});
+const { data } = await useFetch("/api/test");
 </script>
 
 <style scoped></style>
