@@ -2,6 +2,7 @@
   <div>
     <header>
       <nav>
+        <NuxtLink to="/">Nuxt App</NuxtLink>
         <ul>
           <li>
             <NuxtLink to="/">Home</NuxtLink>
